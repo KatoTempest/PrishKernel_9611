@@ -7,11 +7,11 @@ export ARCH=arm64
 export SUBARCH=arm64
 export ANDROID_MAJOR_VERSION=r
 export PLATFORM_VERSION=11.0.0
-export M21CHAT_ID="-1001364246024"
+
 
 # Export KBUILD flags
-export KBUILD_BUILD_USER=neel0210
-export KBUILD_BUILD_HOST=hell
+#export KBUILD_BUILD_USER=licht
+#export KBUILD_BUILD_HOST=hell
 
 # CCACHE
 export CCACHE="$(which ccache)"
@@ -21,29 +21,30 @@ ccache -M 50G
 export CCACHE_COMPRESS=1
 
 # TC LOCAL PATH
-export CROSS_COMPILE=/home/neel/Desktop/toolchain/gcc/bin/aarch64-linux-android-
-export CLANG_TRIPLE=/home/neel/Desktop/toolchain/clang/bin/aarch64-linux-gnu-
-export CC=/home/neel/Desktop/toolchain/clang/bin/clang
+export CROSS_COMPILE=/home/licht/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9/bin/aarch64-linux-android-
+export CLANG_TRIPLE=/usr/bin/aarch64-linux-gnu-
+export CC=/home/licht/clang+llvm-6.0.1-x86_64-linux-gnu-ubuntu-16.04/bin/clang
+
 
 echo "===="
-echo "M21"
+echo "A51"
 echo "===="
 make clean
 make mrproper
 rm -rf A51
-make A51_defconfig O=A51
-make -j$(nproc --all) O=M21 | tee A51_Compile.log
+make prisma_a51_defconfig 
+make -j$(nproc --all)  | tee A51_Compile.log
 echo "Kernel Compiled"
 echo ""
-rm ./PRISH/AK/Image
+rm ./PRISMA/AK/Image
 rm ./output/*.zip
-#cp -r ./M21/arch/arm64/boot/Image ./PRISH/AK/Image
-#cd PRISH/AK
-#. zip.sh
-#cd ../..
-#cp -r ./PRISH/AK/1*.zip ./output/PrishKernel-ONEUI-R3-Ak-M21.zip
-#rm ./PRISH/AK/*.zip
-#rm ./PRISH/AK/Image
+cp -r ./arch/arm64/boot/Image ./PRISMA/AK/Image
+cd PRISMA/AK
+. zip.sh
+cd ../..
+cp -r ./PRISMA/AK/1*.zip ./output/PrismaKernel-A51.zip
+rm ./PRISMA/AK/*.zip
+rm ./PRISMA/AK/Image
 
 #changelog=`cat PRISH/changelog.txt`
 #for i in output/*.zip
