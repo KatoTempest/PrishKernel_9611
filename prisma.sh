@@ -10,7 +10,7 @@ export PLATFORM_VERSION=11.0.0
 
 # Export KBUILD flags
 export KBUILD_BUILD_USER=licht
-export KBUILD_BUILD_HOST=hell
+export KBUILD_BUILD_HOST=ubuntu
 
 # CCACHE
 export CCACHE="$(which ccache)"
@@ -55,7 +55,7 @@ echo "  | |_) | |_) || |\___ \| |\/| | / _ \   \___ \| |   | |_) || || |_) || | 
 echo "  |  __/|  _ < | | ___) | |  | |/ ___ \   ___) | |___|  _ < | ||  __/ | |   "
 echo "  |_|   |_| \_\___|____/|_|  |_/_/   \_\ |____/ \____|_| \_\___|_|    |_|   "
 echo "                                                                            "
-echo "            coded by Neel0210, DAvinash97, Durasame                         "
+echo "            coded by Neel0210, DAvinash97, Durasame - Modified by licht     "
 echo "                                                                            "
 echo "Select"
 echo "1 = Clear"
