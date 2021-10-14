@@ -16,14 +16,14 @@ export PLATFORM_VERSION=11.0.0
 # CCACHE
 export CCACHE="$(which ccache)"
 export USE_CCACHE=1
-export CCACHE_EXEC="/home/neel/Desktop/ccache"
+export CCACHE_EXEC="/home/ccache"
 ccache -M 50G
 export CCACHE_COMPRESS=1
 
 # TC LOCAL PATH
-export CROSS_COMPILE=/home/licht/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9/bin/aarch64-linux-android-
+export CROSS_COMPILE=/home/licht/toolchain/aarch64-linux-android-4.9/bin/aarch64-linux-android-
 export CLANG_TRIPLE=/usr/bin/aarch64-linux-gnu-
-export CC=/home/licht/clang+llvm-6.0.1-x86_64-linux-gnu-ubuntu-16.04/bin/clang
+export CC=/home/licht/toolchain/clang-4639204/bin/clang
 
 
 echo "===="

@@ -313,9 +313,9 @@ SUBARCH := $(shell uname -m | sed -e s/i.86/x86/ -e s/x86_64/x86/ \
 
 export KBUILD_BUILDHOST := $(SUBARCH)
 ARCH		?=arm64
-CROSS_COMPILE=/home/licht/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9/bin/aarch64-linux-android-
+CROSS_COMPILE=/home/licht/toolchain/aarch64-linux-android-4.9/bin/aarch64-linux-android-
 CLANG_TRIPLE=/usr/bin/aarch64-linux-gnu-
-CC=/home/licht/clang+llvm-6.0.1-x86_64-linux-gnu-ubuntu-16.04/bin/clang
+CC=/home/licht/toolchain/clang-4639204/bin/clang
 
 # Architecture as present in compile.h
 UTS_MACHINE 	:= $(ARCH)

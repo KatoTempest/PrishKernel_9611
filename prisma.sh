@@ -10,7 +10,7 @@ export PLATFORM_VERSION=11.0.0
 
 # Export KBUILD flags
 export KBUILD_BUILD_USER=licht
-export KBUILD_BUILD_HOST=ubuntu
+export KBUILD_BUILD_HOST=arch
 
 # CCACHE
 export CCACHE="$(which ccache)"
@@ -20,9 +20,9 @@ ccache -M 50G
 export CCACHE_COMPRESS=1
 
 # TC LOCAL PATH
-export CROSS_COMPILE=/home/licht/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9/bin/aarch64-linux-android-
+export CROSS_COMPILE=/home/licht/toolchain/aarch64-linux-android-4.9/bin/aarch64-linux-android-
 export CLANG_TRIPLE=/usr/bin/aarch64-linux-gnu-
-export CC=/home/licht/clang+llvm-6.0.1-x86_64-linux-gnu-ubuntu-16.04/bin/clang
+export CC=/home/licht/toolchain/clang-4639204/bin/clang
 
 # Export toolchain/cross flags
 #export TOOLCHAIN="aarch64-linux-android-"
