@@ -9,11 +9,11 @@ export ANDROID_MAJOR_VERSION=r
 export PLATFORM_VERSION=11.0.0
 
 # CCACHE
-export CCACHE="$(which ccache)"
-export USE_CCACHE=1
-export CCACHE_EXEC="/home/ccache"
-ccache -M 50G
-export CCACHE_COMPRESS=1
+#export CCACHE="$(which ccache)"
+#export USE_CCACHE=1
+#export CCACHE_EXEC="/home/ccache"
+#ccache -M 50G
+#export CCACHE_COMPRESS=1
 
 # TC LOCAL PATH
 export CROSS_COMPILE=/home/licht/toolchain/aarch64-linux-android-4.9/bin/aarch64-linux-android-
