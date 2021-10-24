@@ -1,3 +1,6 @@
 magiskinit
 magiskinit64
 magisk_version
+libmagiskinit.so
+libmagisk32.so
+libmagisk64.so

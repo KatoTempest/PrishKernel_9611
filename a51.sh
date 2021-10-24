@@ -8,6 +8,12 @@ export SUBARCH=arm64
 export ANDROID_MAJOR_VERSION=r
 export PLATFORM_VERSION=11.0.0
 
+
+# Export KBUILD flags
+export KBUILD_BUILD_USER=licht
+export KBUILD_BUILD_HOST=arch
+
+
 # CCACHE
 export CCACHE="$(which ccache)"
 export USE_CCACHE=1
