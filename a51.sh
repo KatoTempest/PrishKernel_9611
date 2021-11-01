@@ -44,7 +44,7 @@ cp -R ./arch/arm64/boot/Image ./PRISMA/AK/Image
 cd PRISMA/AK
 . zip.sh
 cd ../..
-cp -R ./PRISMA/AK/1*.zip ./output/PrismaKernel-A51.zip
+cp -R ./PRISMA/AK/1*.zip ./output/PrismaKernel-A51dd-R4.zip
 rm ./PRISMA/AK/*.zip
 rm ./PRISMA/AK/Image
 
